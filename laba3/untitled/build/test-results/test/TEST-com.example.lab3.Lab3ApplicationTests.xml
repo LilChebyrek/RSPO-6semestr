@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.lab3.Lab3ApplicationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-25T11:35:08" hostname="DESKTOP-I67LT0G" time="0.754">
+  <properties/>
+  <testcase name="testAuthorEndpointWithParam()" classname="com.example.lab3.Lab3ApplicationTests" time="0.743"/>
+  <testcase name="testAuthorEndpoint()" classname="com.example.lab3.Lab3ApplicationTests" time="0.006"/>
+  <testcase name="contextLoads()" classname="com.example.lab3.Lab3ApplicationTests" time="0.003"/>
+  <system-out><![CDATA[18:35:06.729 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.lab3.Lab3ApplicationTests]: Lab3ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:35:06.811 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.lab3.Lab3Application for test class com.example.lab3.Lab3ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2025-02-25T18:35:07.148+07:00  INFO 15916 --- [lab3] [    Test worker] com.example.lab3.Lab3ApplicationTests    : Starting Lab3ApplicationTests using Java 21.0.6 with PID 15916 (started by Danila in C:\Users\Danila\Desktop\SSW\lab3)
+2025-02-25T18:35:07.149+07:00  INFO 15916 --- [lab3] [    Test worker] com.example.lab3.Lab3ApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-02-25T18:35:07.761+07:00  INFO 15916 --- [lab3] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-02-25T18:35:07.774+07:00  INFO 15916 --- [lab3] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T18:35:07.774+07:00  INFO 15916 --- [lab3] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T18:35:07.815+07:00  INFO 15916 --- [lab3] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T18:35:07.816+07:00  INFO 15916 --- [lab3] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 650 ms
+2025-02-25T18:35:08.175+07:00  INFO 15916 --- [lab3] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54917 (http) with context path '/'
+2025-02-25T18:35:08.181+07:00  INFO 15916 --- [lab3] [    Test worker] com.example.lab3.Lab3ApplicationTests    : Started Lab3ApplicationTests in 1.249 seconds (process running for 2.236)
+2025-02-25T18:35:08.831+07:00  INFO 15916 --- [lab3] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25T18:35:08.832+07:00  INFO 15916 --- [lab3] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-25T18:35:08.832+07:00  INFO 15916 --- [lab3] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Danila\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
