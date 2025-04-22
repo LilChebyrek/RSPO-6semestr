@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ShopApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ShopApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ru.sibsutis.shop.html">ru.sibsutis.shop</a> &gt; ShopApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.843s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.843s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>23:36:30.594 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [ru.sibsutis.shop.ShopApplicationTests]: ShopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:36:30.766 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration ru.sibsutis.shop.ShopApplication for test class ru.sibsutis.shop.ShopApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-08T23:36:31.401+07:00  INFO 24644 --- [shop] [    Test worker] ru.sibsutis.shop.ShopApplicationTests    : Starting ShopApplicationTests using Java 21.0.6 with PID 24644 (started by Quant in C:\lab8)
+2025-04-08T23:36:31.404+07:00  INFO 24644 --- [shop] [    Test worker] ru.sibsutis.shop.ShopApplicationTests    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-04-08T23:36:32.582+07:00  INFO 24644 --- [shop] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-08T23:36:32.717+07:00  INFO 24644 --- [shop] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 6 JPA repository interfaces.
+2025-04-08T23:36:33.549+07:00  INFO 24644 --- [shop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-08T23:36:33.854+07:00  INFO 24644 --- [shop] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c8f4bc7
+2025-04-08T23:36:33.858+07:00  INFO 24644 --- [shop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-08T23:36:34.146+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.database                       : Set default schema name to public
+2025-04-08T23:36:34.604+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : INFO: The drop-all command may result in unrecoverable destructive changes to objects at 'jdbc:postgresql://localhost:5432/shop'.
+To protect against unwanted drops, set --requireForce=true, which will require a --force=true flag on the command.
+Learn more at https://docs.liquibase.com/dropall.
+
+2025-04-08T23:36:34.708+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2025-04-08T23:36:34.717+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.command                        : Dropping Database Objects in schema: shop.public
+2025-04-08T23:36:34.728+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.snapshot                       : Creating snapshot
+2025-04-08T23:36:34.986+07:00  WARN 24644 --- [shop] [    Test worker] liquibase.executor                       : удаление распространяется на объект ограничение fk_order_customer в отношении таблица &quot;order&quot;
+2025-04-08T23:36:34.993+07:00  WARN 24644 --- [shop] [    Test worker] liquibase.executor                       : удаление распространяется на объект ограничение fk_order_detail_item в отношении таблица order_detail
+2025-04-08T23:36:35.002+07:00  WARN 24644 --- [shop] [    Test worker] liquibase.executor                       : удаление распространяется на объект ограничение fk_order_detail_order в отношении таблица order_detail
+2025-04-08T23:36:35.382+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.database                       : Successfully deleted all supported object types in schema shop.public.
+2025-04-08T23:36:35.390+07:00  WARN 24644 --- [shop] [    Test worker] liquibase.lockservice                    : Failed to release change log lock
+2025-04-08T23:36:35.393+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : All objects dropped from postgres@jdbc:postgresql://localhost:5432/shop
+2025-04-08T23:36:35.393+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.command                        : Command execution complete
+2025-04-08T23:36:35.803+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2025-04-08T23:36:35.820+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-08T23:36:35.926+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2025-04-08T23:36:35.927+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.command                        : Using deploymentId: 4130195927
+2025-04-08T23:36:35.931+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-08T23:36:35.986+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/changelog.xml::add-tag-1.0.0::cool_developer
+2025-04-08T23:36:35.991+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Tag 'v.1.0.0' applied to database
+2025-04-08T23:36:35.993+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/changelog.xml::add-tag-1.0.0::cool_developer ran successfully in 4ms
+2025-04-08T23:36:36.001+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-payment-tables.xml::create_payment_table::cool_developer
+2025-04-08T23:36:36.010+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table payment created
+2025-04-08T23:36:36.011+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-payment-tables.xml::create_payment_table::cool_developer ran successfully in 9ms
+2025-04-08T23:36:36.016+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-payment-tables.xml::create_cash_table::cool_developer
+2025-04-08T23:36:36.022+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table cash_payment created
+2025-04-08T23:36:36.023+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-payment-tables.xml::create_cash_table::cool_developer ran successfully in 7ms
+2025-04-08T23:36:36.028+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-payment-tables.xml::create_check_table::cool_developer
+2025-04-08T23:36:36.034+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table check_payment created
+2025-04-08T23:36:36.035+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-payment-tables.xml::create_check_table::cool_developer ran successfully in 7ms
+2025-04-08T23:36:36.041+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-payment-tables.xml::create_credit_payment_table::cool_developer
+2025-04-08T23:36:36.048+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table credit_payment created
+2025-04-08T23:36:36.049+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-payment-tables.xml::create_credit_payment_table::cool_developer ran successfully in 7ms
+2025-04-08T23:36:36.052+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-item-table.xml::create_item_table::cool_developer
+2025-04-08T23:36:36.064+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table item created
+2025-04-08T23:36:36.065+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-item-table.xml::create_item_table::cool_developer ran successfully in 12ms
+2025-04-08T23:36:36.072+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-user-tables.xml::create_user_table::cool_developer
+2025-04-08T23:36:36.090+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table user created
+2025-04-08T23:36:36.091+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-user-tables.xml::create_user_table::cool_developer ran successfully in 18ms
+2025-04-08T23:36:36.097+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-user-tables.xml::create_customer_table::cool_developer
+2025-04-08T23:36:36.109+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table customer created
+2025-04-08T23:36:36.110+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-user-tables.xml::create_customer_table::cool_developer ran successfully in 12ms
+2025-04-08T23:36:36.116+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-order-table.xml::create_order_table::cool_developer
+2025-04-08T23:36:36.124+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table order created
+2025-04-08T23:36:36.126+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-order-table.xml::create_order_table::cool_developer ran successfully in 9ms
+2025-04-08T23:36:36.132+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-order_detail-table.xml::create_order_detail_table::cool_developer
+2025-04-08T23:36:36.140+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table order_detail created
+2025-04-08T23:36:36.141+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-order_detail-table.xml::create_order_detail_table::cool_developer ran successfully in 9ms
+2025-04-08T23:36:36.146+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/create-session-table.xml::create_session_table::cool_developer
+2025-04-08T23:36:36.156+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : Table session created
+2025-04-08T23:36:36.159+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/create-session-table.xml::create_session_table::cool_developer ran successfully in 11ms
+2025-04-08T23:36:36.163+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/insert-initial-payment.xml::insert_initial_payment::cool_developer
+2025-04-08T23:36:36.167+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : New row inserted into payment
+2025-04-08T23:36:36.171+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : New row inserted into cash_payment
+2025-04-08T23:36:36.173+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/insert-initial-payment.xml::insert_initial_payment::cool_developer ran successfully in 9ms
+2025-04-08T23:36:36.178+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/v.1.0.0/insert-initial-item.xml::insert-initial-item::cool_developer
+2025-04-08T23:36:36.184+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : New row inserted into item
+2025-04-08T23:36:36.186+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : New row inserted into item
+2025-04-08T23:36:36.189+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/v.1.0.0/insert-initial-item.xml::insert-initial-item::cool_developer ran successfully in 11ms
+2025-04-08T23:36:36.202+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.util                           : UPDATE SUMMARY
+2025-04-08T23:36:36.202+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.util                           : Run:                         13
+2025-04-08T23:36:36.202+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.util                           : Previously run:               0
+2025-04-08T23:36:36.202+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.util                           : Filtered out:                 0
+2025-04-08T23:36:36.203+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.util                           : -------------------------------
+2025-04-08T23:36:36.203+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.util                           : Total change sets:           13
+2025-04-08T23:36:36.204+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.util                           : Update summary generated
+2025-04-08T23:36:36.210+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.command                        : Update command completed successfully.
+2025-04-08T23:36:36.211+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 17
+2025-04-08T23:36:36.214+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2025-04-08T23:36:36.216+07:00  INFO 24644 --- [shop] [    Test worker] liquibase.command                        : Command execution complete
+2025-04-08T23:36:36.440+07:00  INFO 24644 --- [shop] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-08T23:36:36.566+07:00  INFO 24644 --- [shop] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-08T23:36:36.649+07:00  INFO 24644 --- [shop] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-08T23:36:37.174+07:00  INFO 24644 --- [shop] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-08T23:36:37.293+07:00  INFO 24644 --- [shop] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-08T23:36:39.211+07:00  INFO 24644 --- [shop] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-08T23:36:39.217+07:00  INFO 24644 --- [shop] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-08T23:36:40.269+07:00  WARN 24644 --- [shop] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-08T23:36:40.328+07:00  INFO 24644 --- [shop] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-04-08T23:36:41.364+07:00  INFO 24644 --- [shop] [    Test worker] ru.sibsutis.shop.ShopApplicationTests    : Started ShopApplicationTests in 10.362 seconds (process running for 12.161)
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Quant\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 8 апр. 2025 г., 23:36:42</p>
+</div>
+</div>
+</body>
+</html>
