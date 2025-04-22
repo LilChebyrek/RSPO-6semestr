@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="insert-initial-item" author="cool_developer">
+        <insert tableName="item">
+            <column name="id" valueNumeric="10"/>
+            <column name="shipping_weight" valueNumeric="2.50"/>
+            <column name="description" value="Велосипед городской"/>
+        </insert>
+        <insert tableName="item">
+            <column name="id" valueNumeric="15"/>
+            <column name="shipping_weight" valueNumeric="3"/>
+            <column name="description" value="Картошка"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
